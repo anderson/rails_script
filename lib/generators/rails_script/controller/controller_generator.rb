@@ -5,7 +5,7 @@ module RailsScript
       argument :controller, type: :string
 
       def generate_file
-        template 'javascript.js.coffee', "app/assets/javascripts/#{controller.underscore}.js.coffee"
+        template 'javascript.js.coffee', "app/assets/javascripts/controllers/#{controller.underscore}.js.coffee"
       end
 
     end
